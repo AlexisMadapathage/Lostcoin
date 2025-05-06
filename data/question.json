@@ -1,0 +1,62 @@
+[
+    {
+      "question": "Dans quelle année le Bitcoin a-t-il été présenté pour la première fois au monde ?",
+      "options": ["2005", "2008", "2010", "2012"],
+      "answer": "2008",
+      "feedback": "Le Bitcoin a été présenté en 2008 par Satoshi Nakamoto dans un livre blanc intitulé 'Bitcoin: A Peer-to-Peer Electronic Cash System'."
+    },
+    {
+      "question": "Comment s’appelle la technologie sur laquelle repose le Bitcoin ?",
+      "options": ["Bitstream", "Cyberchain", "Blockchain", "Ledgergrid"],
+      "answer": "Blockchain",
+      "feedback": "La blockchain est une base de données distribuée, publique et infalsifiable, qui stocke toutes les transactions Bitcoin."
+    },
+    {
+      "question": "Quel rôle jouent les “mineurs” dans le réseau Bitcoin ?",
+      "options": ["Ils créent des pièces manuellement", "Ils suppriment les anciennes transactions", "Ils valident les transactions via des calculs", "Ils envoient des mails d’alerte"],
+      "answer": "Ils valident les transactions via des calculs",
+      "feedback": "Les mineurs résolvent des calculs complexes pour valider les blocs de transactions. En retour, ils reçoivent une récompense en bitcoins."
+    },
+    {
+      "question": "Quel est le nombre maximal de bitcoins qui existeront un jour ?",
+      "options": ["10 millions", "100 millions", "21 millions", "Illimité"],
+      "answer": "21 millions",
+      "feedback": "Le protocole Bitcoin limite l’émission à 21 millions de bitcoins, ce qui crée une rareté semblable à celle de l’or."
+    },
+    {
+      "question": "Comment appelle-t-on l’événement qui réduit la récompense du minage tous les 4 ans environ ?",
+      "options": ["The Cut", "Halving", "Bit Split", "Mining Pause"],
+      "answer": "Halving",
+      "feedback": "Le halving divise par deux les récompenses accordées aux mineurs. C’est un mécanisme intégré pour ralentir l’émission de nouveaux bitcoins."
+    },
+    {
+      "question": "À quoi peut servir le Bitcoin ?",
+      "options": ["À jouer au poker en ligne uniquement", "À envoyer de l’argent sans banque", "À pirater des sites", "À naviguer sur Internet"],
+      "answer": "À envoyer de l’argent sans banque",
+      "feedback": "Le Bitcoin permet d’envoyer des fonds à n’importe qui dans le monde, sans passer par une banque ou un intermédiaire."
+    },
+    {
+      "question": "Pourquoi dit-on que le Bitcoin est “volatile” ?",
+      "options": ["Parce qu’il disparaît en cas d’orage", "Parce qu’il change de forme", "Parce que sa valeur monte et descend rapidement", "Parce qu’il fond au soleil"],
+      "answer": "Parce que sa valeur monte et descend rapidement",
+      "feedback": "Le Bitcoin est volatile car sa valeur peut fortement varier en très peu de temps, selon l’offre, la demande ou l’actualité."
+    },
+    {
+      "question": "Comment s’appelle la plus petite unité de Bitcoin ?",
+      "options": ["MicroBTC", "Satoshi", "NanoCoin", "Centibit"],
+      "answer": "Satoshi",
+      "feedback": "Un Satoshi (ou 'sat') est la plus petite unité du Bitcoin : 1 BTC = 100 000 000 satoshis."
+    },
+    {
+      "question": "Quel outil permet d’accéder à ses bitcoins ?",
+      "options": ["Un digicode", "Une clé privée", "Une carte magnétique", "Une empreinte vocale"],
+      "answer": "Une clé privée",
+      "feedback": "Pour dépenser ses bitcoins, il faut signer les transactions avec une clé privée, qu’il faut protéger comme un trésor."
+    },
+    {
+      "question": "Qui est le mystérieux créateur du Bitcoin ?",
+      "options": ["Elon Musk", "Vitalik Buterin", "Satoshi Nakamoto", "Edward Snowden"],
+      "answer": "Satoshi Nakamoto",
+      "feedback": "Satoshi Nakamoto est le pseudonyme du créateur inconnu du Bitcoin. Il a quitté le projet en 2010 et n’a jamais révélé son identité."
+    }
+  ]  

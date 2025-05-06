@@ -1,0 +1,3 @@
+Game name : The Quest of the Lost Coin
+
+Help recover the lost Coin in a playful 2D quest! Solve 10 mysteries to uncover the secrets of crypto and meet The Owner...
