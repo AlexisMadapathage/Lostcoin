@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Quest of the Lost Coin</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="scss/main.css" />
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -25,6 +25,8 @@
 
     <!-- Zone de jeu -->
     <div id="game-screen" class="screen hidden">
+        <div id="background"></div>
+        <img id="character" src="assets/img/run/run_000.png" alt="Character">
         <div id="question-number"></div>
         <div id="question-text"></div>
         <div id="answers"></div>

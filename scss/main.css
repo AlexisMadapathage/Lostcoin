@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Press Start 2P", cursive;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+button {
+  background-color: #F7931A;
+  color: black;
+  border: none;
+  padding: 14px 24px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Press Start 2P", cursive;
+}
+button:hover {
+  background-color: #e67c00;
+}
+
+#start-button {
+  z-index: 5;
+  position: relative;
+}
+
+#character {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  transition: left 0.3s ease;
+  width: 140px;
+  z-index: 5;
+}
+
+#logo-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-bitcoin {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+h1, h2 {
+  color: #F7931A;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #121212;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #121212;
+  z-index: 0;
+}
+
+.screen {
+  display: none;
+}
+.screen.active {
+  display: block;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url("../assets/img/city1_7.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom left;
+  z-index: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=main.css.map */

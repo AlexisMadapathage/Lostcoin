@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+
+#logo-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-bitcoin {
+  width: 100px;
+  transition: transform 0.3s ease;
+}

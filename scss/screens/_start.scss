@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: v.$z-ui;
+  background-color: v.$color-bg;
+}
+
+.hidden {
+  display: none !important;
+}

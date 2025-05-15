@@ -1,0 +1,8 @@
+@use '../base/variables' as v;
+
+h1, h2 {
+  color: v.$color-accent;
+  margin-bottom: 20px;
+  font-size: v.$font-size-title;
+  line-height: 1.4;
+}
