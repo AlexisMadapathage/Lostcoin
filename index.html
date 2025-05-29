@@ -7,7 +7,7 @@
     <title>The Quest of the Lost Coin</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -28,10 +28,22 @@
         <div id="background"></div>
         <img id="character" src="assets/img/run/run_000.png" alt="Character">
         <div id="question-number"></div>
-        <div id="question-text"></div>
+        <div id="game-question-text"></div>
         <div id="answers"></div>
         <div id="feedback" class="hidden"></div>
+        <img id="coin" src="assets/img/coin/coin_01.png" alt="coin" class="hidden" />
     </div>
+
+    <div id="question-popup" class="popup hidden">
+        <p id="popup-question-text"></p>
+        <div id="popup-answers"></div>
+    </div>
+
+    <div id="feedback-popup" class="hidden">
+        <p id="feedback-message"></p>
+        <button id="continue-button">Continue</button>
+    </div>
+
 
     <!-- Écran de fin -->
     <div id="end-screen" class="screen hidden">
