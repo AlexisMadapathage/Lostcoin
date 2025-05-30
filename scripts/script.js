@@ -115,16 +115,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isCorrect = selected === question.answer;
 
-    // Affichage du message
+    // === Show the message ===
     feedbackMessage.textContent = isCorrect ? "✅ Correct!" : "❌ Wrong answer!";
     feedbackPopup.classList.remove("hidden");
     feedbackPopup.classList.add(isCorrect ? "success" : "error");
 
-    // Désactive les autres réponses
+    // === Disable the other answers ===
     const answerButtons = document.querySelectorAll("#popup-answers button");
     answerButtons.forEach(btn => btn.disabled = true);
 
-    // Gestion du bouton "Continuer"
+    // === "Continue" button management ===
     continueButton.onclick = () => {
       feedbackPopup.classList.add("hidden");
       feedbackPopup.classList.remove("success", "error");
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
           coin.style.display = "none";
         }
       } else {
-        // Mauvaise réponse : retour au début du jeu
+        // === If wrong answer: back to the start of the game ===
         resetToStart();
       }
     };
@@ -150,18 +150,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const background = document.getElementById("background");
     const coin = document.getElementById("coin");
 
-    // Revenir au début de la scène actuelle (Gx) en fonction de la question en cours
+    // === Go back to the correct background ===
     background.style.backgroundImage = `url('${backgrounds[currentQuestionIndex]}')`;
 
-    // Réinitialiser la position du perso et du fond
+    // === Reset character and background position ===
     character.style.left = "60px";
     background.style.backgroundPosition = "0px bottom";
 
-    // Masquer la pièce
+    // === Hide the coin ===
     coin.classList.add("hidden");
     coin.style.display = "none";
 
-    // Remettre le compteur de pas à 0
+    // === Reset the step counter to 0 ===
     steps = 0;
     bgOffset = 0;
   }

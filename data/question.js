@@ -23,14 +23,14 @@ export const questions = [
   {
     id: 4,
     question: "What is the maximum number of bitcoins that will ever exist?",
-    options: ["10 million", "100 million", "21 million", "Unlimited"],
+    options: ["21 million", "100 million", "10 million", "Unlimited"],
     answer: "21 million",
     feedback: "Bitcoin’s protocol limits the total supply to 21 million coins, creating scarcity similar to gold."
   },
   {
     id: 5,
     question: "What is the name of the event that halves the mining reward approximately every 4 years?",
-    options: ["The Cut", "Halving", "Bit Split", "Mining Pause"],
+    options: ["The Cut", "Mining Pause", "Bit Split", "Halving"],
     answer: "Halving",
     feedback: "Halving reduces the mining reward by 50% every four years. It helps slow down the release of new bitcoins."
   },
@@ -51,7 +51,7 @@ export const questions = [
   {
     id: 8,
     question: "What is the smallest unit of Bitcoin called?",
-    options: ["MicroBTC", "Satoshi", "NanoCoin", "Centibit"],
+    options: ["Satoshi", "QuarterCoin", "NanoCoin", "Centibit"],
     answer: "Satoshi",
     feedback: "A satoshi (or 'sat') is the smallest unit of Bitcoin: 1 BTC = 100,000,000 satoshis."
   },
@@ -65,7 +65,7 @@ export const questions = [
   {
     id: 10,
     question: "Who is the mysterious creator of Bitcoin?",
-    options: ["Elon Musk", "Vitalik Buterin", "Satoshi Nakamoto", "Edward Snowden"],
+    options: ["Elon Musk", "Donald J. Trump", "Edward Snowden", "Satoshi Nakamoto"],
     answer: "Satoshi Nakamoto",
     feedback: "Satoshi Nakamoto is the pseudonymous creator of Bitcoin. He left the project in 2010 and never revealed his identity."
   }

@@ -1,20 +1,20 @@
 @use '../base/variables' as v;
 
-// Mixin pour centrer un élément avec Flexbox
+// Mixin to center an element with Flexbox
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Mixin pour texte pixelisé façon rétro
+// Mixin for retro pixelated text
 @mixin pixel-font {
   font-family: v.$font-main;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-// Mixin d’animation de flottement vertical
+// Vertical Float Animation Mixin
 @mixin float-animation($name, $distance: 15px, $duration: 2s) {
   @keyframes #{$name} {
     0%   { transform: translateY(0); }
