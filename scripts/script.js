@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let steps = 0;
   let canTriggerPopup = false;
   let readyForNextScene = false;
+  let canMove = true;
 
   // === Float logo ===
   function floatLogo() {
@@ -130,9 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.classList.add("hidden");
 
       if (isCorrect) {
-        readyForNextScene = true; // Autorise la transition par déplacement
-        coin.classList.add("hidden");
-        coin.style.display = "none";
+        if (currentQuestionIndex === questions.length - 1) {
+          showEndScreen();
+        } else {
+          readyForNextScene = true;
+          coin.classList.add("hidden");
+          coin.style.display = "none";
+        }
       } else {
         // Mauvaise réponse : retour au début du jeu
         resetToStart();
@@ -178,11 +183,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("keydown", (event) => {
     if (!readyForNextScene) return;
+    if (!canMove) return;
 
     const character = document.getElementById("character");
     const characterLeft = parseInt(window.getComputedStyle(character).left, 10);
 
     if (characterLeft > window.innerWidth) {
+      canMove = false;
       currentQuestionIndex++;
 
       if (currentQuestionIndex < backgrounds.length) {
@@ -190,9 +197,22 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       prepareNextScene(); // repositionner le perso à gauche, cacher la pièce
+      setTimeout(() => {
+        canMove = true;
+      }, 200);
       readyForNextScene = false;
     }
   });
 
+  function showEndScreen() {
+    const gameScreen = document.getElementById("game-screen");
+    const endScreen = document.getElementById("end-screen");
+    const finalScore = document.getElementById("final-score");
+
+    gameScreen.classList.add("hidden");
+    endScreen.classList.remove("hidden");
+
+    finalScore.textContent = "You found the Lost Coin and met Satoshi!";
+  }
 
 });
